@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Book </title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+		<script type="text/javascript" language="javascript" src="js/jquery.js"></script>
+<script type="text/javascript" language="javascript" >
+
+$(document).ready(function() {
+$("a.mobile").click(function(){
+	$(".sidebar").slideToggle('fast');
+
+});
+window.onresize = function(event)
+{
+	if ($(window).width() > 320) {
+		$(".sidebar").show();
+	}
+}
+
+});
+ 
+</script>
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
+	</head>
+	<body>
+		<div id="header">
+		<div class="logo">
+		<a href="#">SA<span>Customer Maintenance</span></a>
+		</div>
+		</div>
+		<a class="mobile" href="#">MENU</a>
+		<div id="container">
+			<div id="sidebar" class="sidebar">
+				<ul id="nav">
+					<li><a class="selected" href="index.php">Dashboard</a></li>
+					<li><a href="home_testcase.php">Test Case</a></li>
+					<li><a href="#">Admin</a></li>
+					<li><a href="#">Forum</a></li>
+					<li><a href="#">Reports</a></li>
+					<li><a href="#">Support</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</body>
+</html>
